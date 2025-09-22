@@ -53,6 +53,8 @@ source ~/{your_ws}/install/setup.bash
 ros2 launch booster_robot_driver booster_t1_control.launch.py
 ```
 
+Robot still needs to be switched to Custom mode via the remote control! otherwise it's only possible to read robot state but it wont accept commands.
+
 ### Mock Hardware Mode (Testing)
 
 ```bash
