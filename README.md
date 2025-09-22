@@ -1,5 +1,7 @@
 # Booster Robot Driver
 
+![Booster Robot](booster.png)
+
 ROS2 driver for the Booster T1 robot using ros2_control framework with native ROS2 topic communication (does not need Booster SDK).
 
 ## Overview
