@@ -1,0 +1,126 @@
+# Booster T1 Robot - Official Joint Limits Configuration
+#
+# This file contains the official joint limits for the Booster T1 humanoid robot
+# based on the hardware specifications from Booster Robotics.
+#
+# All position limits are in radians (converted from degrees)
+# These limits are enforced in software by the hardware interface
+# to prevent damage to the robot hardware.
+#
+# Usage: Loaded by the hardware interface for software limit enforcement
+
+joint_limits:
+  # ID 0: Head Yaw Joint (-58° to 58°)
+  Head_yaw:
+    min_position: -1.012291  # -58 degrees
+    max_position: 1.012291   # 58 degrees
+
+  # ID 1: Head Pitch Joint (-18° to 47°)
+  Head_pitch:
+    min_position: -0.314159  # -18 degrees
+    max_position: 0.820305   # 47 degrees
+
+  # ID 2: Left Shoulder Pitch Joint (-188° to 68°)
+  Left_Shoulder_Pitch:
+    min_position: -3.281219  # -188 degrees
+    max_position: 1.186824   # 68 degrees
+
+  # ID 3: Left Shoulder Roll Joint (-94° to 88°)
+  Left_Shoulder_Roll:
+    min_position: -1.640609  # -94 degrees
+    max_position: 1.536037   # 88 degrees
+
+  # ID 4: Left Shoulder Yaw Joint (-128° to 128°) → Maps to Left_Shoulder_Yaw in URDF
+  Left_Shoulder_Yaw:
+    min_position: -2.234021  # -128 degrees
+    max_position: 2.234021   # 128 degrees
+
+  # ID 5: Left Elbow Joint (-120° to 2°) → Maps to Left_Elbow_Pitch in URDF
+  Left_Elbow_Pitch:
+    min_position: -2.094395  # -120 degrees
+    max_position: 0.034907   # 2 degrees
+
+  # ID 6: Right Shoulder Pitch Joint (-188° to 68°)
+  Right_Shoulder_Pitch:
+    min_position: -3.281219  # -188 degrees
+    max_position: 1.186824   # 68 degrees
+
+  # ID 7: Right Shoulder Roll Joint (-88° to 94°)
+  Right_Shoulder_Roll:
+    min_position: -1.536037  # -88 degrees
+    max_position: 1.640609   # 94 degrees
+
+  # ID 8: Right Shoulder Yaw Joint (-128° to 128°) → Maps to Right_Shoulder_Yaw in URDF
+  Right_Shoulder_Yaw:
+    min_position: -2.234021  # -128 degrees
+    max_position: 2.234021   # 128 degrees
+
+  # ID 9: Right Elbow Joint (-2° to 120°) → Maps to Right_Elbow_Pitch in URDF
+  Right_Elbow_Pitch:
+    min_position: -0.034907  # -2 degrees
+    max_position: 2.094395   # 120 degrees
+
+  # ID 10: Waist Yaw Joint (-58° to 58°)
+  Waist:
+    min_position: -1.012291  # -58 degrees
+    max_position: 1.012291   # 58 degrees
+
+  # ID 11: Left Hip Pitch Joint (-118° to 118°)
+  Left_Hip_Pitch:
+    min_position: -2.059489  # -118 degrees
+    max_position: 2.059489   # 118 degrees
+
+  # ID 12: Left Hip Roll Joint (-21° to 88°)
+  Left_Hip_Roll:
+    min_position: -0.366519  # -21 degrees
+    max_position: 1.536037   # 88 degrees
+
+  # ID 13: Left Hip Yaw Joint (-58° to 58°)
+  Left_Hip_Yaw:
+    min_position: -1.012291  # -58 degrees
+    max_position: 1.012291   # 58 degrees
+
+  # ID 14: Left Knee Joint (0° to 123°)
+  Left_Knee_Pitch:
+    min_position: 0.0        # 0 degrees
+    max_position: 2.146755   # 123 degrees
+
+  # ID 15: Left Ankle Up Joint (-23° to 49°)
+  Left_Ankle_Pitch:
+    min_position: -0.401426  # -23 degrees
+    max_position: 0.855211   # 49 degrees
+
+  # ID 16: Left Ankle Down Joint (-24° to 45°)
+  Left_Ankle_Roll:
+    min_position: -0.418879  # -24 degrees
+    max_position: 0.785398   # 45 degrees
+
+  # ID 17: Right Hip Pitch Joint (-118° to 118°)
+  Right_Hip_Pitch:
+    min_position: -2.059489  # -118 degrees
+    max_position: 2.059489   # 118 degrees
+
+  # ID 18: Right Hip Roll Joint (-88° to 21°)
+  Right_Hip_Roll:
+    min_position: -1.536037  # -88 degrees
+    max_position: 0.366519   # 21 degrees
+
+  # ID 19: Right Hip Yaw Joint (-58° to 58°)
+  Right_Hip_Yaw:
+    min_position: -1.012291  # -58 degrees
+    max_position: 1.012291   # 58 degrees
+
+  # ID 20: Right Knee Joint (0° to 123°)
+  Right_Knee_Pitch:
+    min_position: 0.0        # 0 degrees
+    max_position: 2.146755   # 123 degrees
+
+  # ID 21: Right Ankle Up Joint (-23° to 49°)
+  Right_Ankle_Pitch:
+    min_position: -0.401426  # -23 degrees
+    max_position: 0.855211   # 49 degrees
+
+  # ID 22: Right Ankle Down Joint (-24° to 45°)
+  Right_Ankle_Roll:
+    min_position: -0.418879  # -24 degrees
+    max_position: 0.785398   # 45 degrees

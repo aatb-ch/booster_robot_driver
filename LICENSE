@@ -1,0 +1,44 @@
+MIT License
+
+Copyright (c) 2025 Thibault Brevet / AATB GmbH
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+===============================================================================
+Third-Party Components:
+
+This project incorporates components from the following third-party sources:
+
+1. T1 Robot URDF and Mesh Files
+   Source: Booster Robotics - https://github.com/BoosterRobotics/booster_gym
+   License: Apache License 2.0
+   Files: urdf/T1_serial.urdf, meshes/*.STL
+
+   The T1 robot description files (URDF and mesh files) are derived from the
+   booster_gym project by Booster Robotics and are subject to the Apache
+   License 2.0. These files have been modified for ros2_control integration.
+
+2. ROS2 Control Framework
+   Source: https://github.com/ros-controls/ros2_control
+   License: Apache License 2.0
+
+   This project builds upon the ROS2 Control framework and follows its
+   conventions and interfaces.
+
+All third-party components retain their original licenses and copyright notices.

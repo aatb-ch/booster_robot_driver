@@ -1,0 +1,9 @@
+<library path="booster_robot_driver">
+  <class name="booster_robot_driver/BoosterHardwareInterface"
+         type="booster_robot_driver::BoosterHardwareInterface"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Hardware interface for Booster robots
+    </description>
+  </class>
+</library>
