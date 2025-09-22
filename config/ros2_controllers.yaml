@@ -8,7 +8,7 @@
 # - joint_state_broadcaster: Publishes joint states to /joint_states
 # - joint_group_position_controller: Standard position control for all 23 joints
 #
-# Usage: Used by booster_control.launch.py
+# Usage: Used by booster_t1_control.launch.py
 
 controller_manager:
   ros__parameters:

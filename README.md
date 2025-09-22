@@ -50,17 +50,17 @@ colcon build
 source ~/{your_ws}/install/setup.bash
 
 # Launch the driver (default: mock hardware mode)
-ros2 launch booster_robot_driver booster_control.launch.py
+ros2 launch booster_robot_driver booster_t1_control.launch.py
 ```
 
 ### Mock Hardware Mode (Testing)
 
 ```bash
 # Mock hardware (default) - allows immediate commanding
-ros2 launch booster_robot_driver booster_control.launch.py
+ros2 launch booster_robot_driver booster_t1_control.launch.py
 
 # Constrained control with mock hardware (using Ruckig)
-ros2 launch booster_robot_driver booster_constrained_control.launch.py
+ros2 launch booster_robot_driver booster_t1_constrained_control.launch.py
 ```
 
 ### Real Robot Mode
@@ -69,11 +69,11 @@ Connects to real robot via ROS2 topics:
 
 ```bash
 # Real robot mode - waits for /low_state before commanding
-ros2 launch booster_robot_driver booster_control.launch.py \
+ros2 launch booster_robot_driver booster_t1_control.launch.py \
     use_mock_hardware:=false
 
 # Constrained control with real robot (using Ruckig)
-ros2 launch booster_robot_driver booster_constrained_control.launch.py \
+ros2 launch booster_robot_driver booster_t1_constrained_control.launch.py \
     use_mock_hardware:=false
 ```
 

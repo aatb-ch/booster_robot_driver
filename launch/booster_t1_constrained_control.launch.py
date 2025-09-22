@@ -22,10 +22,10 @@ Parameters:
 
 Usage:
   # Mock hardware (safe for testing)
-  ros2 launch booster_robot_driver booster_constrained_control.launch.py
+  ros2 launch booster_robot_driver booster_t1_constrained_control.launch.py
 
   # Real robot (waits for /low_state before commanding)
-  ros2 launch booster_robot_driver booster_constrained_control.launch.py use_mock_hardware:=false
+  ros2 launch booster_robot_driver booster_t1_constrained_control.launch.py use_mock_hardware:=false
 """
 
 from launch import LaunchDescription

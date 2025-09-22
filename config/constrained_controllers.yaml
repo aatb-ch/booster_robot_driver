@@ -11,7 +11,7 @@
 # The ConstrainedPositionController uses Ruckig trajectory generation for smooth
 # motion planning with configurable constraints for each joint.
 #
-# Usage: Used by booster_constrained_control.launch.py
+# Usage: Used by booster_t1_constrained_control.launch.py
 
 controller_manager:
   ros__parameters:
