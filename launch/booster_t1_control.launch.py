@@ -17,6 +17,7 @@ Parameters:
 - use_mock_hardware: Enable mock mode for testing (default: true)
 - robot_description_file: URDF file to use (default: T1_ros2_control.urdf.xacro)
 - launch_rviz: Launch RViz visualization (default: true)
+- controllers_config_file: Controller configuration YAML file (default: ros2_controllers.yaml)
 
 Usage:
   # Mock hardware (safe for testing)
@@ -24,6 +25,9 @@ Usage:
 
   # Real robot (waits for /low_state before commanding)
   ros2 launch booster_robot_driver booster_t1_control.launch.py use_mock_hardware:=false
+
+  # With custom controller config
+  ros2 launch booster_robot_driver booster_t1_control.launch.py controllers_config_file:=/path/to/custom_config.yaml
 """
 
 from launch import LaunchDescription
@@ -60,11 +64,19 @@ def generate_launch_description():
             description="Launch RViz for visualization",
         )
     )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "controllers_config_file",
+            default_value="ros2_controllers.yaml",
+            description="Controller configuration YAML file",
+        )
+    )
 
     # Initialize Arguments
     use_mock_hardware = LaunchConfiguration("use_mock_hardware")
     robot_description_file = LaunchConfiguration("robot_description_file")
     launch_rviz = LaunchConfiguration("launch_rviz")
+    controllers_config_file = LaunchConfiguration("controllers_config_file")
 
     # Get URDF via xacro
     robot_description_content = Command(
@@ -86,7 +98,7 @@ def generate_launch_description():
         [
             FindPackageShare("booster_robot_driver"),
             "config",
-            "ros2_controllers.yaml",
+            controllers_config_file,
         ]
     )
 
